@@ -1,12 +1,27 @@
 import React from './react';
 import ReactDOM from './react-dom';
 
+function RB(props) {
+  return <h2>
+    这是一个h2组件 { props.name }
+  </h2>;
+}
+
+class RB2 extends React.Component {
+  render() {
+    return (
+      <h2>
+        这是一个h2组件 { this.props.name }
+      </h2>
+    );
+  }
+}
+
 ReactDOM.render(
   <div id='react-root'>
     this is root element
-    <span className='word'>
-      I am a span
-    </span>
+    <RB2 name={ 'react demo1' }/>
+    <RB name={ 'react demo2' }/>
   </div>,
   document.getElementById('root'),
 );
