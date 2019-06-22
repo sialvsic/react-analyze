@@ -1,0 +1,20 @@
+{
+  "name": "react-analyze",
+  "version": "1.0.0",
+  "description": "This repo aim to analyze react and DIY it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sialvsic/react-analyze.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sialvsic/react-analyze/issues"
+  },
+  "homepage": "https://github.com/sialvsic/react-analyze#readme"
+}
