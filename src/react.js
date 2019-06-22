@@ -1,7 +1,9 @@
+import { createVNode } from './vdom';
+
 function createElement(type, props, ...children) {
 
   //区分不同的组件类型
-  let vtype = null;
+  let vtype;
 
   if (typeof type === 'string') {
     //字符串 就是普通的div这种元素
@@ -15,12 +17,7 @@ function createElement(type, props, ...children) {
     }
   }
 
-  props.children = children;
-  return {
-    type,
-    props,
-    children,
-  };
+  return createVNode(vtype, type, props, children);
 }
 
 class Component {
@@ -29,11 +26,11 @@ class Component {
 
   constructor(props) {
     this.props = props;
+    this.state = {};
   }
 
   setState() {
     //异步更新队列里面push任务
-
   }
 }
 

@@ -1,5 +1,5 @@
 import React from './react';
-import ReactDOM from './react-dom';
+import * as ReactDOM from './react-dom';
 
 function RB(props) {
   return <h2>
@@ -8,11 +8,16 @@ function RB(props) {
 }
 
 class RB2 extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
-      <h2>
+      <h2 className={ '123' }>
         这是一个h2组件 { this.props.name }
       </h2>
+
     );
   }
 }

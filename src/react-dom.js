@@ -1,7 +1,6 @@
-function render() {
-  console.log(...arguments);
-}
+import { initVNode } from './vdom';
 
-export default {
-  render,
-};
+export function render(vdom, container) {
+  let rootNode = initVNode(vdom);
+  container.appendChild(rootNode);
+}
