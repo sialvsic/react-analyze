@@ -4,6 +4,8 @@
   "description": "This repo aim to analyze react and DIY it.",
   "main": "index.js",
   "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build <your entry file>",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/sialvsic/react-analyze/issues"
   },
-  "homepage": "https://github.com/sialvsic/react-analyze#readme"
+  "homepage": "https://github.com/sialvsic/react-analyze#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "parcel-bundler": "^1.12.3"
+  }
 }
